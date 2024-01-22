@@ -1,1 +1,11 @@
-@import 'reset.css';
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+
+/*
+    font-family: "Noto Serif KR", serif;
+    font-family: "Nanum Gothic", sans-serif;
+*/
+
+body * {
+    font-family: "Nanum Gothic", sans-serif;
+}
