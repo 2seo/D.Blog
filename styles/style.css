@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "theme.css";
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
 
 /*
@@ -8,4 +9,121 @@
 
 body * {
     font-family: "Nanum Gothic", sans-serif;
+}
+header {
+    z-index: 50;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background: none;
+}
+.header .title {
+    color: var(--backgroundColor);
+    font-size: 14px;
+    font-weight: 700;
+}
+.fixed {
+    position: fixed;
+    opacity: 0.9;
+}
+.fixed .header {
+    background-color: var(--backgroundColor);
+    border-bottom: 1px solid #ccc;
+    height: 55px;
+    transition: all .5s;
+}
+.fixed .title {
+    color: var(--fontColor);
+    opacity: 0.7;
+}
+.progress {
+    width: 100%;
+    height: 2px;
+    display: none;
+}
+.progress .bar {
+    height: 100%;
+    width: 0%;
+    background-color: var(--fontColor);
+}
+.cover {
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background: url(https://gongu.copyright.or.kr/gongu/wrt/cmmn/wrtFileImageView.do?wrtSn=11288962&filePath=L2Rpc2sxL25ld2RhdGEvMjAxNS8wMi9DTFM2OS9OVVJJXzAwMV8wNDQ4X251cmltZWRpYV8yMDE1MTIwMw==&thumbAt=Y&thumbSe=b_tbumb&wrtTy=10006) center center / cover no-repeat;
+}
+.cover .cover-cover {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.cover .title-wrap {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 900px;
+    bottom: 0;
+    margin-bottom: 30px;
+}
+.cover .title-wrap{
+    h1{
+        font-family: "Noto Serif KR", serif;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    h3{
+        opacity: 0.8;
+        margin-bottom: 50px;
+    }
+    span{
+        font-size: 12px;
+    }
+    .date {
+        opacity: 0.5;
+    }
+}
+.main {
+    position: absolute;
+    top: 100vh;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--backgroundColor);
+}
+.main .text-wrap {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px 0;
+    text-align: center;
+
+    h1{
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 2;
+    }
+    h3{
+        font-weight: 700;
+        font-family: 24px;
+        line-height: 1.6;
+    }
+    p{
+        font-weight: 400;
+        line-height: 1.2    ;
+    }
+    img {
+        max-width: 100%;
+        margin: 20px 0;
+    }
 }

@@ -1,0 +1,14 @@
+:root {
+    --backgroundColor: #fff;
+    --fontColor: #121212;
+}
+
+:root[color-theme="light"] {
+    --backgroundColor: #fff;
+    --fontColor: #121212;
+}
+
+:root[color-theme="dark"] {
+    --backgroundColor: #121212;
+    --fontColor: #fff;
+}
